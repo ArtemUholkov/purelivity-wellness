@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*CSS RESET START*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*CSS RESET END*/
+
+/*COLOR VARIABLES START*/
+:root {
+  --main-bg-color: #ffffff;
+  --usual-decorations: #2d53f5;
+  --main-text-color: #000000;
+}
+/*COLOR VARIABLES END*/
+
+/*COMMONT STYLES START*/
+html {
+  scroll-behavior: smooth;
+}
+.main_button {
+}
+.main_button:hover {
+}
+body {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+  background: var(--main-bg-color);
+}
+h1 {
+}
+.container {
+}
+h2 {
+}
+.section_subtitle {
+}
+/*COMMONT STYLES END*/

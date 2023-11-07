@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FONTS-->
+
+    <!--FONTS-->
+    <!-- Slider-swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Slider-swiper -->
+    <title>Purelivity Wellness</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_wrapper mycontainer">
+        <nav class="navbar">
+          <a href="index.html" class="logo_wrapper">
+            <img src="img/global/logo.png" alt="logo" class="main-logo logo-white" />
+            <img
+              src="img/global/logo-color.png"
+              alt="logo"
+              class="main-logo logo-hide logo-color"
+            />
+          </a>
+
+          <ul class="navbar_menu">
+            <li><p class="nav_elem" href="" onclick="scrollToNumbers()">Projects</p></li>
+            <li><p class="nav_elem" href="#" onclick="scrollToSolutions()">Solutions</p></li>
+            <li><p class="nav_elem" href="#" onclick="scrollToProcess()">Process</p></li>
+            <li><p class="nav_elem" href="#" onclick="scrollToReviews()">Clients reviews</p></li>
+            <li><p class="nav_elem" href="#" onclick="scrollToTeam()">Team</p></li>
+          </ul>
+
+          <div class="burger">
+            <div class="burger_space" id="burger">
+              <span class="stick"></span>
+              <span class="stick"></span>
+              <span class="stick"></span>
+            </div>
+          </div>
+        </nav>
+        <div class="popup" id="popup">
+          <div class="popup_textblock" id="popupSlide">
+            <ul class="navbar_menu_mobile">
+              <li><p class="nav_elem_mobile" href="" onclick="scrollToNumbers()">Projects</p></li>
+              <li>
+                <p class="nav_elem_mobile" href="" onclick="scrollToSolutions()">Solutions</p>
+              </li>
+              <li>
+                <p class="nav_elem_mobile" href="" onclick="scrollToProcess()">Process</p>
+              </li>
+              <li>
+                <p class="nav_elem_mobile" href="" onclick="scrollToReviews()">Clients reviews</p>
+              </li>
+              <li>
+                <p class="nav_elem_mobile" href="" onclick="scrollToTeam()">Team</p>
+              </li>
+            </ul>
+            <div class="header_button_pair mob_menu_buttons">
+              <a href="#contacts" class="main_button mob_button" onclick="scrollToSub()"
+                >Get started <img class="arrow_icon" src="img/global/icon_arrow.svg" alt="icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main"></section>
+    <section class="price"></section>
+    <section class="featured"></section>
+    <section class="begin"></section>
+    <section class="sub"></section>
+
+    <!-- <footer data-aos="fade-up">
+      <div class="footer_wrapper">
+        <div class="footer_texts_wrapper">
+          <img src="img/footer/logo.png" alt="logo" class="footer_logo" />
+
+          <p class="footer_text">
+            Canada: 2600 Skymark Avenue 5-104 Mississauga, Ontario L4W5B2 Canada
+          </p>
+          <div class="phone_mail_wrapper">
+            <a href="tel:+16474969733" class="footer_text footer_phone">+1 647 496 9733</a>
+          </div>
+          <p class="footer_text">Ukraine: 45a Chornovola Avenue Lviv, UA 79035 Ukraine</p>
+          <div class="phone_mail_wrapper">
+            <a href="mailto:contact@webugol.com" class="footer_text footer_phone"
+              >contact@webugol.com</a
+            >
+          </div>
+        </div>
+        <div class="logos_wrapper">
+          <div class="footer_logos_wrapper">
+            <a href="https://www.facebook.com/webugol/" target="_blank"
+              ><img src="img/footer/facebook.png" alt="fb" class="footer_logo_links"
+            /></a>
+            <a href="https://www.instagram.com/webugol/" target="_blank"
+              ><img src="img/footer/instagram.png" alt="inst" class="footer_logo_links"
+            /></a>
+            <a href="https://www.linkedin.com/company/webugol/" target="_blank"
+              ><img src="img/footer/linkedin.png" alt="linkedin" class="footer_logo_links"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Webugol+-+%D0%9C%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%B8%D0%BD%D0%B3%D0%BE%D0%B2%D0%B0+%D0%B0%D0%B3%D0%B5%D0%BD%D1%86%D1%96%D1%8F/@49.8523671,24.0207104,17z/data=!3m1!4b1!4m5!3m4!1s0x473add9a181694ad:0x36b4b7078b0aac35!8m2!3d49.8523671!4d24.0228991"
+              ><img src="img/footer/google.png" alt="google" class="footer_logo_links"
+            /></a>
+            <a href="https://clutch.co/profile/webugol#summary" target="_blank"
+              ><img src="img/footer/c.png" alt="c" class="footer_logo_links"
+            /></a>
+            <a href="https://www.youtube.com/channel/UCTz9pjgaffPnINNaLWF-gOQ" target="_blank"
+              ><img src="img/footer/youtube.png" alt="youtube" class="footer_logo_links"
+            /></a>
+          </div>
+          <div class="footer_partners_wrapper">
+            <div class="footer_partners_pair">
+              <div class="footer_partner_wrapper">
+                <img src="img/footer/fbpartner.png" alt="fbpartner" class="footer_partner" />
+              </div>
+              <div class="footer_partner_wrapper">
+                <img src="img/footer/klaviyo.png" alt="klaviyo" class="footer_partner" />
+              </div>
+            </div>
+            <div class="footer_partners_pair right_pair">
+              <div class="footer_partner_wrapper">
+                <img src="img/footer/googlepartner.png" alt="google" class="footer_partner" />
+              </div>
+              <div class="footer_partner_wrapper">
+                <img src="img/footer/shopify.png" alt="shopify" class="footer_partner" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <!-- Initialize Swiper -->
+  </body>
+</html>
