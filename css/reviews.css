@@ -3,7 +3,7 @@
   background-color: var(--main-bg-color);
 }
 .reviews_wrapper {
-  padding: 0 150px 150px 150px;
+  padding: 150px 150px 150px 150px;
 }
 .reviews_title {
   margin-bottom: 60px;
@@ -79,12 +79,12 @@
 }
 @media (max-width: 1550px) {
   .reviews_wrapper {
-    padding: 0 80px 130px 80px;
+    padding: 130px 80px 130px 80px;
   }
 }
 @media (max-width: 1300px) {
   .reviews_wrapper {
-    padding: 0 20px 60px 20px;
+    padding: 60px 20px 60px 20px;
   }
 }
 @media (max-width: 1190px) {

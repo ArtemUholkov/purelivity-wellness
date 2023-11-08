@@ -184,7 +184,64 @@
         </div>
       </div>
     </section>
-    <section class="sub"></section>
+    <section class="sub">
+      <div class="form_wrapper">
+        <p class="sub_form_title">See if you qualify</p>
+        <p class="sub_form_subtitle">
+          Fill out the information below and you will receive a short health history form to fill
+          out online to see if you qualify.
+        </p>
+        <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+          <div class="input-container" data-aos="fade-up" data-aos-duration="800">
+            <input required type="text" name="Subject" />
+            <label>Name</label>
+          </div>
+
+          <div class="input-container" data-aos="fade-up" data-aos-duration="800">
+            <input required type="email" name="text" />
+            <label>Email</label>
+          </div>
+          <div class="input-container" data-aos="fade-up" data-aos-duration="800">
+            <input required type="tel" name="extra_phone_number" />
+            <label>Phone number</label>
+          </div>
+          <div class="wrap_3_forms">
+            <div class="input-container" data-aos="fade-up" data-aos-duration="800">
+              <input required type="text" name="extra_Height" />
+              <label>Height</label>
+              <span class="currency">In</span>
+            </div>
+            <div class="input-container" data-aos="fade-up" data-aos-duration="800">
+              <input required type="text" name="extra_Weight" />
+              <label>Weight</label>
+              <span class="currency">lbs</span>
+            </div>
+            <div class="input-container" data-aos="fade-up" data-aos-duration="800">
+              <input required type="text" name="extra_Age" />
+              <label>Age</label>
+              <span class="currency">Yrs</span>
+            </div>
+          </div>
+          <div class="input-container">
+            <input id="submit_form" type="submit" value="Submit" class="form_button" />
+          </div>
+          <input type="hidden" name="access_token" value="b6ptufawi5qmc6uw1hqngyoz" />
+
+          <input
+            type="hidden"
+            name="success_url"
+            value=".?message=Email+Successfully+Sent%21&isError=0"
+          />
+          <input
+            type="hidden"
+            name="error_url"
+            value=".?message=Email+could+not+be+sent.&isError=1"
+          />
+        </form>
+      </div>
+      <img src="img/sub/submain.png" alt="girl" class="sub_image sub_desk" />
+      <img src="img/sub/sub_mob.png" alt="girl" class="sub_image sub_mob" />
+    </section>
     <section class="reviews">
       <div class="reviews_wrapper">
         <h2 class="reviews_title">Triumph Stories</h2>

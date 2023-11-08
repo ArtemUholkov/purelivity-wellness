@@ -15,16 +15,16 @@
 }
 .main_textside_wrapper {
   height: 100%;
-
-  padding-bottom: 100px;
+  /* padding-bottom: 100px;
   padding-left: 150px;
-  padding-right: 105px;
+  padding-right: 105px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 50%;
 }
 .main_textside_text_wrapper {
-  margin-top: calc(20%);
+  margin-top: 20%;
   display: flex;
   flex-direction: column;
 
@@ -35,9 +35,7 @@
   max-width: 381px;
   color: var(--bgtext);
   font-size: 32px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .main_textside_button {
   width: 100%;
@@ -45,6 +43,6 @@
 }
 
 .main_imageside_image {
-  width: auto;
-  height: 100%;
+  width: 50%;
+  object-fit: cover;
 }
