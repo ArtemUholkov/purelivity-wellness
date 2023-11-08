@@ -6,6 +6,9 @@
   padding: 150px;
 }
 .price_title {
+  max-width: 1102px;
+  text-align: center;
+  margin: 0 auto;
   margin-bottom: 80px;
 }
 .price_content {
@@ -85,4 +88,94 @@
 .button_arrow {
   width: 42px;
   height: 42px;
+}
+@media (max-width: 1820px) {
+  .price_content_wrapper {
+    padding: 100px 80px;
+  }
+}
+@media (max-width: 1700px) {
+  .price_image {
+    max-width: 650px;
+  }
+}
+@media (max-width: 1550px) {
+  .price_image {
+    max-width: 515px;
+  }
+}
+@media (max-width: 1400px) {
+  .price_content_wrapper {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 1250px) {
+  .price_text_content_description {
+    color: var(--main-text-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 32px;
+    width: auto;
+  }
+}
+@media (max-width: 1000px) {
+  .price_image {
+    max-width: 450px;
+  }
+  .price_title {
+    font-size: 45px;
+  }
+}
+@media (max-width: 865px) {
+  .price_content {
+    flex-direction: column;
+  }
+  .price_image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .price_text_content {
+    width: auto;
+  }
+  .price_title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 650px) {
+  .price_title {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  .price_text_content_title {
+    font-size: 20px;
+  }
+  .price_text_content_description {
+    font-size: 16px;
+  }
+  .price_text_content_only {
+    font-size: 16px;
+  }
+  .price_text_content_price {
+    font-size: 32px;
+  }
+  .price_text_content_price_per {
+    font-size: 16px;
+  }
+  .price_text_content_price_description {
+    font-size: 16px;
+  }
+  .price_button {
+    font-size: 16px;
+    max-width: 200px;
+    padding: 26px 24px;
+    height: 48px;
+    width: 100%;
+  }
+  .white_arrow {
+    width: 24px;
+    height: 24px;
+  }
 }
