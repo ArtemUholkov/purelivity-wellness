@@ -130,10 +130,7 @@ table {
 html {
   scroll-behavior: smooth;
 }
-.main_button {
-}
-.main_button:hover {
-}
+
 body {
   position: relative;
   width: 100%;
@@ -188,10 +185,5 @@ h2 {
   height: 42px;
   width: 42px;
 }
-.container {
-}
-h2 {
-}
-.section_subtitle {
-}
+
 /*COMMONT STYLES END*/
