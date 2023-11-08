@@ -25,7 +25,7 @@
       crossorigin="anonymous"
     />
     <!-- Slider-swiper -->
-    <title>Purelivity Wellness</title>
+    <title>Purelivity Wellness - Weight Loss Therapy</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="" />
     <link rel="stylesheet" href="css/index.css" />
@@ -38,8 +38,7 @@
 
           <ul class="navbar_menu">
             <li><p class="nav_elem" href="" onclick="scrollToPrice()">Price</p></li>
-            <li><p class="nav_elem" href="#" onclick="scrollToAbout()">About</p></li>
-            <li><p class="nav_elem" href="#" onclick="scrollToBenefits()">Benefits</p></li>
+            <li><p class="nav_elem" href="#" onclick="scrollToPrice()">About</p></li>
             <li><p class="nav_elem" href="#" onclick="scrollToHIW()">How it works</p></li>
             <li><p class="nav_elem" href="#" onclick="scrollToReviews()">Triumph Stories</p></li>
             <li>
@@ -60,11 +59,9 @@
             <ul class="navbar_menu_mobile">
               <li><p class="nav_elem_mobile" href="" onclick="scrollToPrice()">Price</p></li>
               <li>
-                <p class="nav_elem_mobile" href="" onclick="scrollToAbout()">About</p>
+                <p class="nav_elem_mobile" href="" onclick="scrollToPrice()">About</p>
               </li>
-              <li>
-                <p class="nav_elem_mobile" href="" onclick="scrollToBenefits()">Benefits</p>
-              </li>
+
               <li>
                 <p class="nav_elem_mobile" href="" onclick="scrollToHIW()">How it works</p>
               </li>
@@ -72,14 +69,21 @@
                 <p class="nav_elem_mobile" href="" onclick="scrollToReviews()">Triumph Stories</p>
               </li>
               <li>
-                <a class="nav_elem_mobile" href="tel:18324604030">(1-832-460-4030)</a>
+                <a class="nav_elem_mobile phone_push" href="tel:18324604030">(1-832-460-4030)</a>
               </li>
+              <a class="price_button common_button" onclick="scrollToSub()"
+                >Get started
+                <img
+                  src="img/price/arrow-white-right.svg"
+                  alt="arrow"
+                  class="button_arrow white_arrow"
+              /></a>
             </ul>
           </div>
         </div>
       </div>
     </header>
-    <!-- <section class="main">
+    <section class="main">
       <div class="main_content_wrapper">
         <div class="main_textside">
           <div class="main_textside_wrapper">
@@ -89,16 +93,17 @@
                 Transform your life with Purelivity Wellness today
               </p>
             </div>
-            <a href="#" class="main_textside_button common_button"
-              >Get started <img src="img/main/arrow-right.svg" alt="" class="button_arrow"
+            <a class="main_textside_button common_button" onclick="scrollToSub()"
+              >Get started
+              <img src="img/main/arrow-right.svg" alt="" class="button_arrow main_but_arrow"
             /></a>
           </div>
         </div>
 
         <img src="img/main/mainimg.png" alt="running girls" class="main_imageside_image" />
       </div>
-    </section> -->
-    <section class="price">
+    </section>
+    <section class="price" id="price">
       <div class="price_content_wrapper">
         <h2 class="price_title">Semaglutide Injections for Weight Loss and Health</h2>
         <div class="price_content">
@@ -119,7 +124,7 @@
             <p class="price_text_content_price_description">
               Price includes consultation, prescription, medication, and all start-up fees
             </p>
-            <a href="#" class="price_button common_button"
+            <a class="price_button common_button" onclick="scrollToSub()"
               >Get started
               <img
                 src="img/price/arrow-white-right.svg"
@@ -147,7 +152,7 @@
         </div>
       </div>
     </section>
-    <section class="begin">
+    <section class="begin" id="hiw">
       <div class="begin_wrapper">
         <h2 class="begin_title">Begin your journey in 4 easy steps</h2>
         <div class="begin_content">
@@ -184,7 +189,7 @@
         </div>
       </div>
     </section>
-    <section class="sub">
+    <section class="sub" id="sub">
       <div class="form_wrapper">
         <p class="sub_form_title">See if you qualify</p>
         <p class="sub_form_subtitle">
@@ -242,7 +247,7 @@
       <img src="img/sub/submain.png" alt="girl" class="sub_image sub_desk" />
       <img src="img/sub/sub_mob.png" alt="girl" class="sub_image sub_mob" />
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="reviews_wrapper">
         <h2 class="reviews_title">Triumph Stories</h2>
         <div class="reviews_slider">
@@ -254,25 +259,52 @@
                     "Exceptional service! Transformed my health journey. Highly recommend.
                     Exceptional service! Transformed my health journey. Highly recommend."
                   </p>
-                  <p class="slide_content_name">Name Surname</p>
+                  <p class="slide_content_name">Naomi L.</p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="slide_content">
                   <p class="slide_content_quote">
-                    "Exceptional service! Transformed my health journey. Highly recommend.
-                    Exceptional service! Transformed my health journey. Highly recommend."
+                    "Semaglutide has been a game-changer for my wellness journey with Purelivity.
+                    It's effective, easy to use, and has made a real difference!"
                   </p>
-                  <p class="slide_content_name">Name Surname</p>
+                  <p class="slide_content_name">Emily B.</p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="slide_content">
                   <p class="slide_content_quote">
-                    "Exceptional service! Transformed my health journey. Highly recommend.
-                    Exceptional service! Transformed my health journey. Highly recommend."
+                    "Purelivity's Semaglutide is a lifesaver! I've seen remarkable weight loss and
+                    improved overall well-being. Highly recommended!"
                   </p>
-                  <p class="slide_content_name">Name Surname</p>
+                  <p class="slide_content_name">Margaret L.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide_content">
+                  <p class="slide_content_quote">
+                    "I'm thrilled with the results Semaglutide from Purelivity has brought to my
+                    health. The transformation is incredible, and I feel fantastic!"
+                  </p>
+                  <p class="slide_content_name">Alice N.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide_content">
+                  <p class="slide_content_quote">
+                    "Purelivity's Semaglutide is a game-changer. It's helped me shed those extra
+                    pounds and regain my confidence. I'm loving the journey!"
+                  </p>
+                  <p class="slide_content_name">Janet M.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide_content">
+                  <p class="slide_content_quote">
+                    "Semaglutide by Purelivity is a true wellness companion. It's not just about
+                    weight loss; it's about feeling healthier and happier every day!"
+                  </p>
+                  <p class="slide_content_name">Stacy N.</p>
                 </div>
               </div>
             </div>
@@ -650,10 +682,10 @@
             >
           </div>
           <div class="footer_logos_wrapper">
-            <a href="#" target="_blank"
+            <a href="https://www.facebook.com/purelivitywellness" target="_blank"
               ><img src="img/footer/fb.svg" alt="fb" class="footer_logo_links"
             /></a>
-            <a href="#" target="_blank"
+            <a href="https://www.instagram.com/tessa_wellness" target="_blank"
               ><img src="img/footer/instagram.svg" alt="inst" class="footer_logo_links"
             /></a>
           </div>

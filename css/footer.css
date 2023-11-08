@@ -103,6 +103,7 @@
   line-height: 130%;
   color: var(--bgtext);
 }
+
 @media (max-width: 1500px) {
   .footer_wrapper {
     padding: 100px 100px;

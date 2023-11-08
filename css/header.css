@@ -108,6 +108,10 @@ header {
 
   width: 100%;
 }
+.phone_push {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 @media (max-width: 1620px) {
   .header_wrapper {
@@ -283,7 +287,11 @@ header {
     }
   }
 }
-
+@media (max-width: 757px) {
+  header {
+    height: 64px;
+  }
+}
 .popup.close {
   background-color: rgba(255, 255, 255, 0);
   animation-name: fadeout;

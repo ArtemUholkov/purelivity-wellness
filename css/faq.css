@@ -82,6 +82,9 @@
   width: 24px;
   height: 24px;
 }
+.accordion-button:focus {
+  box-shadow: none;
+}
 .accordion-button:not(.collapsed) {
   color: var(--main-text-color);
   background-color: transparent;

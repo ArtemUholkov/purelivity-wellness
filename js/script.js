@@ -44,14 +44,14 @@ function burgerHandler(e) {
   burger.classList.toggle('active');
 }
 
-function scrollToNumbers() {
-  document.querySelector('#numbers').scrollIntoView(true);
+function scrollToPrice() {
+  document.querySelector('#price').scrollIntoView(true);
 }
-function scrollToSolutions() {
-  document.querySelector('#solutions').scrollIntoView(true);
+function scrollToHIW() {
+  document.querySelector('#hiw').scrollIntoView(true);
 }
-function scrollToProcess() {
-  document.querySelector('#process').scrollIntoView(true);
+function scrollToReviews() {
+  document.querySelector('#reviews').scrollIntoView(true);
 }
 function scrollToReviews() {
   document.querySelector('#reviews').scrollIntoView(true);
