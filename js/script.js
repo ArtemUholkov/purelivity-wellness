@@ -62,3 +62,16 @@ function scrollToTeam() {
 function scrollToSub() {
   document.querySelector('#sub').scrollIntoView(true);
 }
+const accordeonMore = document.querySelector('.wrap_accordeon');
+const showMorebutton = document.querySelector('.show_more');
+const hideButton = document.querySelector('.hide_more');
+function showmore() {
+  accordeonMore.classList.add('wrap_accordeon_block');
+  showMorebutton.classList.add('wrap_accordeon');
+  hideButton.classList.add('flex_flex');
+}
+function hidemore() {
+  accordeonMore.classList.remove('wrap_accordeon_block');
+  showMorebutton.classList.remove('wrap_accordeon');
+  hideButton.classList.remove('flex_flex');
+}

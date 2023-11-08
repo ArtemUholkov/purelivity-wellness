@@ -1,0 +1,129 @@
+.begin {
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+.begin_wrapper {
+  padding: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.begin_title {
+  max-width: 785px;
+  margin-bottom: 60px;
+}
+.begin_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 60px;
+}
+.begin_content_wrap_2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+}
+.begin_content_item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  align-items: flex-start;
+}
+.begin_content_item_icon {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 28px;
+}
+.begin_content_item_title {
+  color: var(--main-text-color);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+.begin_content_item_subtitle {
+  color: var(--main-text-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wrap {
+  max-width: 228px;
+}
+@media (max-width: 1800px) {
+  .begin_content {
+    gap: 32px;
+  }
+  .begin_content_wrap_2 {
+    gap: 32px;
+  }
+  .begin_wrapper {
+    padding: 150px 80px;
+  }
+}
+@media (max-width: 1310px) {
+  .begin_content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .begin_content_wrap_2 {
+    display: flex;
+
+    justify-content: center;
+    gap: 60px;
+  }
+  .begin_content_item {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 980px) {
+  .begin_title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .begin_wrapper {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 750px) {
+  .begin_content_wrap_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .begin_content_item {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    max-width: 100%;
+  }
+  .begin_content {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .begin_content_item_icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+  }
+  .begin_content_item_title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .begin_content_item_subtitle {
+    font-size: 16px;
+  }
+}
