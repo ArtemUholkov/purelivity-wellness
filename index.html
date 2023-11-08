@@ -234,17 +234,23 @@
           </div>
           <input type="hidden" name="access_token" value="b6ptufawi5qmc6uw1hqngyoz" />
 
-          <input
-            type="hidden"
-            name="success_url"
-            value=".?message=Email+Successfully+Sent%21&isError=0"
-          />
+          <input type="hidden" name="success_url" value=".thankyou.html" />
           <input
             type="hidden"
             name="error_url"
             value=".?message=Email+could+not+be+sent.&isError=1"
           />
         </form>
+        <script>
+          var submitButton = document.getElementById('submit_form');
+          var form = document.getElementById('email_form');
+          form.addEventListener('submit', function (e) {
+            setTimeout(function () {
+              submitButton.value = 'Sending...';
+              submitButton.disabled = true;
+            }, 1);
+          });
+        </script>
       </div>
       <img data-aos="fade-up" src="img/sub/submain.png" alt="girl" class="sub_image sub_desk" />
       <img data-aos="fade-up" src="img/sub/sub_mob.png" alt="girl" class="sub_image sub_mob" />
