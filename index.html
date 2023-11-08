@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--FONTS-->
-
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&f[]=clash-display@700,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!--FONTS-->
     <!-- Slider-swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -25,21 +34,17 @@
     <header class="header">
       <div class="header_wrapper mycontainer">
         <nav class="navbar">
-          <a href="index.html" class="logo_wrapper">
-            <img src="img/global/logo.png" alt="logo" class="main-logo logo-white" />
-            <img
-              src="img/global/logo-color.png"
-              alt="logo"
-              class="main-logo logo-hide logo-color"
-            />
-          </a>
+          <a href="index.html" class="logo_wrapper"> Purelivity Wellness </a>
 
           <ul class="navbar_menu">
-            <li><p class="nav_elem" href="" onclick="scrollToNumbers()">Projects</p></li>
-            <li><p class="nav_elem" href="#" onclick="scrollToSolutions()">Solutions</p></li>
-            <li><p class="nav_elem" href="#" onclick="scrollToProcess()">Process</p></li>
-            <li><p class="nav_elem" href="#" onclick="scrollToReviews()">Clients reviews</p></li>
-            <li><p class="nav_elem" href="#" onclick="scrollToTeam()">Team</p></li>
+            <li><p class="nav_elem" href="" onclick="scrollToPrice()">Price</p></li>
+            <li><p class="nav_elem" href="#" onclick="scrollToAbout()">About</p></li>
+            <li><p class="nav_elem" href="#" onclick="scrollToBenefits()">Benefits</p></li>
+            <li><p class="nav_elem" href="#" onclick="scrollToHIW()">How it works</p></li>
+            <li><p class="nav_elem" href="#" onclick="scrollToReviews()">Triumph Stories</p></li>
+            <li>
+              <a class="nav_elem" href="tel:18324604030">(1-832-460-4030)</a>
+            </li>
           </ul>
 
           <div class="burger">
@@ -53,31 +58,75 @@
         <div class="popup" id="popup">
           <div class="popup_textblock" id="popupSlide">
             <ul class="navbar_menu_mobile">
-              <li><p class="nav_elem_mobile" href="" onclick="scrollToNumbers()">Projects</p></li>
+              <li><p class="nav_elem_mobile" href="" onclick="scrollToPrice()">Price</p></li>
               <li>
-                <p class="nav_elem_mobile" href="" onclick="scrollToSolutions()">Solutions</p>
+                <p class="nav_elem_mobile" href="" onclick="scrollToAbout()">About</p>
               </li>
               <li>
-                <p class="nav_elem_mobile" href="" onclick="scrollToProcess()">Process</p>
+                <p class="nav_elem_mobile" href="" onclick="scrollToBenefits()">Benefits</p>
               </li>
               <li>
-                <p class="nav_elem_mobile" href="" onclick="scrollToReviews()">Clients reviews</p>
+                <p class="nav_elem_mobile" href="" onclick="scrollToHIW()">How it works</p>
               </li>
               <li>
-                <p class="nav_elem_mobile" href="" onclick="scrollToTeam()">Team</p>
+                <p class="nav_elem_mobile" href="" onclick="scrollToReviews()">Triumph Stories</p>
+              </li>
+              <li>
+                <a class="nav_elem_mobile" href="tel:18324604030">(1-832-460-4030)</a>
               </li>
             </ul>
-            <div class="header_button_pair mob_menu_buttons">
-              <a href="#contacts" class="main_button mob_button" onclick="scrollToSub()"
-                >Get started <img class="arrow_icon" src="img/global/icon_arrow.svg" alt="icon"
-              /></a>
-            </div>
           </div>
         </div>
       </div>
     </header>
-    <section class="main"></section>
-    <section class="price"></section>
+    <!-- <section class="main">
+      <div class="main_content_wrapper">
+        <div class="main_textside">
+          <div class="main_textside_wrapper">
+            <div class="main_textside_text_wrapper">
+              <h1>Semaglutide: Your Path to Weight Loss and Health</h1>
+              <p class="main_textside_text_subtext">
+                Transform your life with Purelivity Wellness today
+              </p>
+            </div>
+            <a href="#" class="main_textside_button common_button"
+              >Get started <img src="img/main/arrow-right.svg" alt="" class="button_arrow"
+            /></a>
+          </div>
+        </div>
+
+        <img src="img/main/mainimg.png" alt="running girls" class="main_imageside_image" />
+      </div>
+    </section> -->
+    <section class="price">
+      <div class="price_content_wrapper">
+        <h2 class="price_title">Semaglutide Injections for Weight Loss and Health</h2>
+        <div class="price_content">
+          <img src="img/price/priceimg.png" alt="image" class="price_image" />
+          <div class="price_text_content">
+            <p class="price_text_content_title">Semaglutide</p>
+            <p class="price_text_content_description">
+              Semaglutide is a medication used for weight loss that belongs to a class of drugs
+              called GLP-1 receptor agonists. Semaglutide works by mimicking the action of a
+              naturally occurring hormone in the body called glucagon-like peptide-1 (GLP-1), which
+              helps to regulate blood sugar levels and appetite.
+            </p>
+            <p class="price_text_content_only">ONLY</p>
+            <p class="price_text_content_price">
+              $275
+              <span class="price_text_content_price_per">/ month</span>
+            </p>
+            <p class="price_text_content_price_description">
+              Price includes consultation, prescription, medication, and all start-up fees
+            </p>
+            <a href="#" class="price_button common_button"
+              >Get started
+              <img src="img/price/arrow-white-right.svg" alt="arrow" class="button_arrow"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="featured"></section>
     <section class="begin"></section>
     <section class="sub"></section>

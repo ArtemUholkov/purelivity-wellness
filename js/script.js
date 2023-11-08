@@ -19,11 +19,8 @@ function burgerHandler(e) {
     popup.classList.add('close');
     body.classList.remove('noscroll');
     popupSlide.classList.add('slideout');
-    casualLogo.classList.remove('logo-hide');
-    colorLogo.classList.add('logo-hide');
+
     setTimeout(() => {
-      casualLogo.classList.remove('logo-hide');
-      colorLogo.classList.add('logo-hide');
       // colorLogo.classList.remove('logo-hide');
       // casualLogo.classList.add('logo-hide');
     }, 270);
