@@ -199,13 +199,24 @@
           out online to see if you qualify.
         </p>
         <form action="https://postmail.invotes.com/send" method="post" id="email_form">
-          <div class="input-container" data-aos="fade-up" data-aos-duration="800">
-            <input required type="text" name="Subject" />
-            <label>Name</label>
+          <div class="input-container hiden" data-aos="fade-up" data-aos-duration="800">
+            <input type="text" type="hidden" name="Subject" value="New Customer from website" />
+          </div>
+
+          <div class="input-container hiden" data-aos="fade-up" data-aos-duration="800">
+            <input required type="text" name="text" value="New customer from website" />
           </div>
 
           <div class="input-container" data-aos="fade-up" data-aos-duration="800">
-            <input required type="email" name="text" />
+            <input required type="text" name="extra_name" />
+            <label>Name</label>
+          </div>
+          <div class="input-container" data-aos="fade-up" data-aos-duration="800">
+            <input required type="text" name="extra_Last_name" />
+            <label>Last name</label>
+          </div>
+          <div class="input-container" data-aos="fade-up" data-aos-duration="800">
+            <input required type="email" name="extra_email" />
             <label>Email</label>
           </div>
           <div class="input-container" data-aos="fade-up" data-aos-duration="800">
@@ -232,7 +243,7 @@
           <div class="input-container">
             <input id="submit_form" type="submit" value="Submit" class="form_button" />
           </div>
-          <input type="hidden" name="access_token" value="b6ptufawi5qmc6uw1hqngyoz" />
+          <input type="hidden" name="access_token" value="fi2138nc5t3t25unwm7thdou" />
 
           <input type="hidden" name="success_url" value=".thankyou.html" />
           <input

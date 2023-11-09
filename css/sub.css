@@ -170,6 +170,9 @@ input[type='submit'] {
   outline: 0;
   border: 0;
 }
+.hiden {
+  display: none;
+}
 input[type='submit']:hover {
   cursor: pointer;
   transition: all 0.4s;
